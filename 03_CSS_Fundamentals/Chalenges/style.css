@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -6,8 +10,17 @@ p {
   font-weight: bold;
 }
 
+li {
+  margin-bottom: 15px;
+}
+
+.content {
+}
+
 .product {
   border: 5px solid;
+  width: 825px;
+  margin: 50px auto;
 }
 
 .Converse {
@@ -15,10 +28,12 @@ p {
   text-align: center;
   font-size: 22px;
   background-color: rgb(236, 233, 233);
+  padding: 15px;
 }
 
 .price {
   font-size: 25px;
+  margin-bottom: 0;
 }
 
 .shipping {
@@ -26,6 +41,8 @@ p {
   font-size: 10px;
   font-weight: bold;
   color: grey;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .more-info:link .mire-info:visited {
@@ -37,10 +54,17 @@ p {
 
 .details-title {
   text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .details-list {
   list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
 }
 
 .cart {
@@ -49,10 +73,14 @@ p {
   color: white;
   font-size: 25px;
   text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+  border-top: 5px;
 }
 
 .cart:hover {
   background-color: white;
   color: black;
   cursor: pointer;
+  border-top: 5px solid;
 }
