@@ -17,10 +17,24 @@ li {
 /* .content {
 } */
 
+.sale {
+  color: white;
+  background-color: red;
+  font-size: 10px;
+  padding: 7px 15px;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
 .product {
   border: 5px solid;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .Converse {
@@ -45,11 +59,39 @@ li {
   margin-top: 0;
 }
 
-.more-info:link .mire-info:visited {
+.more-info:link,
+.more-info:visited {
   color: black;
+  margin-bottom: 30px;
+  display: inline-block;
 }
+
 .more-info:hover .more-info:active {
   text-decoration: none;
+}
+
+.color {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: brown;
 }
 
 .details-title {
