@@ -13,8 +13,6 @@ li {
 }
 
 .product-image {
-  float: left;
-  margin-right: 40px;
 }
 
 .clearfix::after {
@@ -53,15 +51,14 @@ li {
 }
 
 .product-info {
-  width: 243px;
-  float: left;
-  margin-right: 40px;
+  /* width: 243px; */
+  flex: 1;
+
   margin-top: 20px;
 }
 
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
@@ -69,9 +66,6 @@ li {
   font-size: 12px;
   font-weight: bold;
   color: grey;
-  margin-bottom: 20px;
-  margin-top: 8;
-  float: right;
 }
 
 .product-description {
@@ -90,12 +84,16 @@ li {
   text-decoration: none;
 }
 
+.colors {
+  display: flex;
+  margin-right: 10px;
+  gap: 10px;
+}
+
 .color {
   background-color: black;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .color-blue {
@@ -130,8 +128,9 @@ li {
 }
 
 .product-details {
-  width: 243px;
-  float: left;
+  /* width: 243px; */
+
+  flex: 1;
   margin-top: 20px;
 }
 
@@ -152,4 +151,16 @@ li {
   color: black;
   cursor: pointer;
   border-top: 5px solid;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
