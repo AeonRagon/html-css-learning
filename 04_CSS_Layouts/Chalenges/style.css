@@ -15,12 +15,6 @@ li {
 .product-image {
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .sale {
   background-color: red;
   color: white;
@@ -40,6 +34,9 @@ li {
   width: 830px;
   margin: 50px auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 30px;
 }
 
 .Converse {
@@ -48,6 +45,7 @@ li {
   font-size: 22px;
   background-color: rgb(236, 233, 233);
   padding: 15px;
+  grid-column: 1 /-1;
 }
 
 .product-info {
@@ -144,6 +142,7 @@ li {
   padding: 15px;
   width: 100%;
   border-top: 4px solid black;
+  grid-column: 1/-1;
 }
 
 .cart:hover {
@@ -154,8 +153,6 @@ li {
 }
 
 .container {
-  display: flex;
-  gap: 40px;
 }
 
 .pricing {
@@ -164,3 +161,9 @@ li {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
+/* .grid_product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+} */
